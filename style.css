@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.dashboard-options {
+  flex: 1;
+  background-color: #2192d4;
+  border: 1px solid red;
+}
+
+.dashboard-part {
+  flex: 5;
+}
