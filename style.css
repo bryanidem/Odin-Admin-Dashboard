@@ -1,6 +1,12 @@
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto, "Courier New", Courier, monospace;
 }
 
 body {
@@ -12,8 +18,33 @@ body {
   flex: 1;
   background-color: #2192d4;
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .dashboard-part {
   flex: 5;
+}
+
+.option,
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  color: azure;
+  font-size: 1.5rem;
+}
+.option > img,
+.logo > img {
+  filter: invert(98%) sepia(1%) saturate(1%) hue-rotate(211deg) brightness(106%)
+    contrast(100%);
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+.logo > img {
+  width: 40px;
 }
