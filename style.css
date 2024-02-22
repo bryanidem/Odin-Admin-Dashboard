@@ -3,6 +3,11 @@
   src: url(assets/fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +22,6 @@ body {
 .dashboard-options {
   flex: 1;
   background-color: #2192d4;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -50,7 +54,6 @@ body {
 }
 
 header {
-  border: 1px solid red;
   padding: 1rem 4rem;
 }
 
@@ -115,4 +118,56 @@ header {
   border: none;
   border-radius: 3rem;
   color: #e2e8f0;
+}
+
+.main-content {
+  display: flex;
+  background-color: #e2e8f0;
+  /* height: 100%; */
+}
+
+.your-projects {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  margin: 4rem;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5rem;
+}
+
+.card {
+  border: 1px solid red;
+  color: ;
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  border-left: 10px solid #f0b428;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card > p:nth-child(1) {
+  font-family: Roboto-Bold, "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.right-information {
+  flex: 1;
 }
