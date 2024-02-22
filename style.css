@@ -80,3 +80,39 @@ header {
   gap: 2rem;
   font-size: 1.5rem;
 }
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-information > div > p:nth-child(2) {
+  font-size: 1.6rem;
+}
+
+.profile-information > img {
+  width: 72px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header-buttons > button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  background-color: #2192d4;
+  border: none;
+  border-radius: 3rem;
+  color: #e2e8f0;
+}
